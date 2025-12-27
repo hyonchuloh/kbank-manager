@@ -377,59 +377,6 @@ public class FepStatisticCtl {
 		logger.info("---------------------------------------");
 		return "graph/peak";
 	}
-	
-	@Deprecated
-	private List<String> listDates(String start_date, String end_date) {
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
-		List<String> retValue = new ArrayList<String>();
-		retValue.add(start_date);
-		long startDate;
-		long endDate;
-		try {
-			startDate = sdf.parse(start_date).getTime();
-			endDate = sdf.parse(end_date).getTime()+10;
-			long nextTime = startDate;
-			for ( int i=0; i<7; i++ ) {
-				nextTime += 24*60*60*1000;
-				if ( nextTime <= endDate ) {
-					retValue.add(sdf.format(new Date(nextTime)));
-				}
-			}
-		} catch (ParseException e) {
-			e.printStackTrace();
-		}
-		return retValue;
-	}
-	
-	@Deprecated
-	private String dayOfWeek(String yyyyMMdd) {
-		Calendar cal = Calendar.getInstance();
-		Date d;
-		String retValue = "";
-		try {
-			d = new SimpleDateFormat("yyyyMMdd").parse(yyyyMMdd);
-			cal.setTime(d);
-			switch ( cal.get(Calendar.DAY_OF_WEEK) ) {
-			case 1:
-				retValue="일"; break;
-			case 2:
-				retValue="월"; break;
-			case 3:
-				retValue="화"; break;
-			case 4:
-				retValue="수"; break;
-			case 5:
-				retValue="목"; break;
-			case 6:
-				retValue="금"; break;
-			case 7:
-				retValue="토"; break;
-			}
-		} catch (ParseException e) {
-			logger.error("--- ERROR ["+yyyyMMdd+"] ", e);
-		}
-		return retValue;
-	}
 
 
 }

@@ -58,8 +58,8 @@ public class FepManagerDaoImpl implements FepManagerDao {
 				}
 				for ( int i=1; i<=rs.getMetaData().getColumnCount(); i++) {
 					if ( rs.getMetaData().getColumnType(i) == Types.INTEGER) {
-						datas.add(new Integer(rs.getInt(i)).toString());
-						rowLog.append(new Integer(rs.getInt(i)).toString());
+						datas.add(Integer.valueOf(rs.getInt(i)).toString());
+						rowLog.append(Integer.valueOf(rs.getInt(i)).toString());
 					} else {
 						datas.add(rs.getString(i));
 						rowLog.append(rs.getString(i));

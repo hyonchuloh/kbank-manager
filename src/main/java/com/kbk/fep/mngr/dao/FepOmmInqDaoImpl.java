@@ -64,7 +64,7 @@ public class FepOmmInqDaoImpl implements FepOmmInqDao {
 			HttpEntity<String> entity = new HttpEntity<>(body, mapData);
 			ResponseEntity<byte[]> response = restTemplate.postForEntity("http://0.0.0.0/corbiz/channel", entity, byte[].class);
 			byte [] resBody = response.getBody();
-			logger.info("--- RESPONSE CODE : {}", response.getStatusCodeValue());
+			logger.info("--- RESPONSE CODE : {}", response.getStatusCode().value());
 			logger.info("--- RESPONSE HEADERS : {}", response.getHeaders());
 			logger.info("--- RESPONSE BODY : {}", new String(resBody));
 			

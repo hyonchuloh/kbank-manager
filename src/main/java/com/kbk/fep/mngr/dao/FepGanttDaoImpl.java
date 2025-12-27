@@ -13,17 +13,13 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.kbk.fep.mngr.dao.vo.FepCommPropVo;
 import com.kbk.fep.mngr.dao.vo.FepGanttVo;
 import com.kbk.fep.util.FepStrUtil;
 @Repository
 public class FepGanttDaoImpl implements FepGanttDao {
 	
-	@Autowired
-	private FepCommPropVo prop;
 	private Logger logger = LoggerFactory.getLogger(this.getClass());
 
 	/**

@@ -64,7 +64,9 @@ public class FepSimulatorDaoImpl implements FepSimulatorDao {
 		try {
 			if ( new File(dbPath).exists() ) {
 				ois = new ObjectInputStream(new FileInputStream(dbPath));
-				retValue = (Map<String, String>) ois.readObject();
+				@SuppressWarnings("unchecked")
+				Map<String, String> temp = (Map<String, String>) ois.readObject();
+				retValue = temp;
 			} else {
 				retValue = new HashMap<String, String>();
 			}

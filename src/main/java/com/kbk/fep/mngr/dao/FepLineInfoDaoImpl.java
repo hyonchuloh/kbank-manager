@@ -380,7 +380,7 @@ public class FepLineInfoDaoImpl implements FepLineInfoDao {
 		if ( inputVo.getSeqNo() == -1 ) {
 			int newNum = ((TreeMap<Integer, FepLineInfoVo>) resultMap ).lastKey()+1;
 			inputVo.setSeqNo(newNum);
-			resultMap.put(new Integer(newNum), inputVo);
+			resultMap.put(Integer.valueOf(newNum), inputVo);
 		} else {
 			resultMap.put(inputVo.getSeqNo(), inputVo);
 		}
@@ -416,7 +416,9 @@ public class FepLineInfoDaoImpl implements FepLineInfoDao {
 		try {
 			if ( new File(dbPath).exists() ) {
 				ois = new ObjectInputStream(new FileInputStream(dbPath));
-				retValue = (Map<Integer, FepLineInfoVo>) ois.readObject();
+				@SuppressWarnings("unchecked")
+				Map<Integer, FepLineInfoVo> temp = (Map<Integer, FepLineInfoVo>) ois.readObject();
+				retValue = temp;
 			} else {
 				retValue = new TreeMap<Integer, FepLineInfoVo>();
 			}
