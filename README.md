@@ -1,6 +1,6 @@
 # KBank Manager
 
-이 프로젝트는 Spring Boot와 Maven을 사용하여 구축된 KBank 관리 애플리케이션입니다.
+이 프로젝트는 Spring Boot와 Maven을 사용하여 구축된 KBank FEP 솔루션 관리 애플리케이션입니다.
 
 ## 요구 사항
 
