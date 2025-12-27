@@ -73,7 +73,7 @@ function holidayCheck() {
 | 필터 : <input type="text" id="filterKey" style="width: 150px;" autocomplete="off" value="${filterKey}"/> 
 <input type="button" value="필터" onclick="location.href='/manager/calendar/${name}?year=${yearInt}&month=${monthInt}&filterKey='+document.getElementById('filterKey').value;" />
 <c:if test="${name eq 'mkt'}">
-　　<font color=red><b>※ 배포일정과 동시간대 마케팅 일정등록 필요시 IT기획팀에 문의주세요.</b></font>(담당자 김영록)
+　　<font color=red><b>※ 배포일정과 동시간대 마케팅 일정등록 필요시 기획팀에 문의주세요.</b></font>(담당자 김*록)
 </c:if>
 </li></ul>
 <table style="width: 100%; table-layout:fixed;" border=1 id="mainTable">
@@ -134,7 +134,7 @@ function holidayCheck() {
 	<c:when test="${name eq 'mkt'}" >
 	<ul>
 		<li>
-			<b>각팀 담당자</b> : 김연정(디지털마케팅팀), 김민지(Brand팀), 이상윤(제휴마케팅팀), 이상현(Data Biz팀), 김영록(IT기획팀)
+			<b>각팀 담당자</b> : 김*정(디지털마케팅), 김*지(Brand), 이*윤(제휴마케팅), 이*현(Data Biz), 김*록(IT기획)
 		</li>
 		<li>
 			<b>작성방법</b> : <font color=red><b>시간 [각팀접두어] ](발송매체-Push/LMS/Alim, 발송물량) 내용(담당자명) </b></font> 순서로 작성, 예시) 10:00~11:00 [데비] (P,20만)신용관리이벤트(홍길동)

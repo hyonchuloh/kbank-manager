@@ -217,7 +217,7 @@ function submitQuery() {
 		LIMIT 1000 <br/>
 	</blockquote>
 	<blockquote>
-		-- 주윤정 펌뱅킹 인터페이스 등록현황<br/>
+		-- 펌뱅킹 인터페이스 등록현황<br/>
 		SELECT APPL_CODE, REP_KIND_CODE, TX_CODE, NAME, REQ_HEAD_MAPP_CLASS,<br/>
 		(SELECT MAPPING_INFO FROM ALTXMAPFLD WHERE SRC_FLD_INFO='sysIntfId' AND CLASS_NAME=A.REQ_HEAD_MAPP_CLASS) AS INTF_ID<br/>
 		FROM ALTX A<br/>

@@ -139,7 +139,7 @@ function openNew() {
 			</c:when>
 			<c:when test="${_item > _startDate}" > <!-- 표시일이 프로젝트 시작일보다 큰경우 -->
 				<c:choose>
-				<c:when test="${row.developer eq '김성아' }" >
+				<c:when test="${row.developer eq '개발자B' }" >
 					<c:set var="td_style2" value="background-color: #ffeedd;" />
 				</c:when>
 				<c:otherwise>
@@ -151,10 +151,10 @@ function openNew() {
 		</c:if>
 		<c:if test="${item eq row.startDate}" >
 			<c:choose>
-			<c:when test="${row.developer eq '김성아' }" >
+			<c:when test="${row.developer eq '개발자B' }" >
 				<c:set var="td_style2" value="background-color: #ffeedd;" />
 			</c:when>
-			<c:when test="${row.developer eq '이태희' }" >
+			<c:when test="${row.developer eq '개발자C' }" >
 				<c:set var="td_style2" value="background-color: #ddffdd;" />
 			</c:when>
 			<c:otherwise>

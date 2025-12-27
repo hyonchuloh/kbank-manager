@@ -25,13 +25,13 @@
 		USER ID : <input type="text" name="userId" value="${userId }"/>
 		<c:choose>
 			<c:when test="${env eq 'stag' }" >
-				(사번 ex. 40160521) --> 스테이징 IM에 FEP 권한등록이 필요합니다.(등록 후 D+1 반영)
+				(사번 ex. 90160521) --> 스테이징 IM에 FEP 권한등록이 필요합니다.(등록 후 D+1 반영)
 			</c:when>
 			<c:when test="${env eq 'dev' }" >
-				(사번 ex. 20160521) --> 개발계정 추가는 별도 문의바랍니다.
+				(사번 ex. 90160521) --> 개발계정 추가는 별도 문의바랍니다.
 			</c:when>
 			<c:otherwise>
-				(사번 ex. 20160521) --> 운영 IM에 FEP 권한등록이 필요합니다.(등록 후 D+1 반영)
+				(사번 ex. 90160521) --> 운영 IM에 FEP 권한등록이 필요합니다.(등록 후 D+1 반영)
 			</c:otherwise>
 		</c:choose>
 	</li>

@@ -176,11 +176,11 @@ function sortTable(num) {
 function inputValues() {
 	var input = document.getElementById("insert_devClcd").innerText;
 	if ( input === "D" ) {
-		document.getElementById("insert_kbkIp").innerText = "0.0.0.0";
-		document.getElementById("insert_kbkNatIp").innerText = "0.0.0.0";
+		document.getElementById("insert_kbkIp").innerText = "127.0.0.1";
+		document.getElementById("insert_kbkNatIp").innerText = "127.0.0.1";
 	} else if ( input === "P" ) {
-		document.getElementById("insert_kbkIp").innerText = "0.0.0.0\n0.0.0.0";
-		document.getElementById("insert_kbkNatIp").innerText = "0.0.0.0";
+		document.getElementById("insert_kbkIp").innerText = "127.0.0.1\n127.0.0.1";
+		document.getElementById("insert_kbkNatIp").innerText = "127.0.0.1";
 	}
 }
 function toExcel() {

@@ -49,9 +49,9 @@ textarea {font-family: d2coding; }
 </form>
 </blockquote>
 <ul>
-	<li>DEV URL SAMPLE : [http://0.0.0.0/a503503]</li>
-	<li>STG URL SAMPLE : [http://0.0.0.0/a503503]</li>
-	<li>CRD URL SAMPLE : [http://0.0.0.0/s089crd]</li>
+	<li>DEV URL SAMPLE : [http://127.0.0.1/a503503]</li>
+	<li>STG URL SAMPLE : [http://127.0.0.1/a503503]</li>
+	<li>CRD URL SAMPLE : [http://127.0.0.1/s089crd]</li>
 </ul>
 <span style="font-weight: bold; color: #C8F03C; background-color: #0F005F; font-family: se-nanumsquare; font-size: 8pt;">Kbank</span>
 </body>

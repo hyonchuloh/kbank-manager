@@ -141,7 +141,7 @@ public class FepLineInfoSvcImpl implements FepLineInfoSvc {
 			cell = row.createCell(3);	cell.setCellStyle(headStyle);	cell.setCellValue("형상번호");
 			cell = row.createCell(4);	cell.setCellStyle(bodyStyle);	cell.setCellValue(vo.getSrType());
 			cell = row.createCell(5);	cell.setCellStyle(headStyle);	cell.setCellValue("인수자");
-			cell = row.createCell(6);	cell.setCellStyle(bodyStyle);	cell.setCellValue("김성아");
+			cell = row.createCell(6);	cell.setCellStyle(bodyStyle);	cell.setCellValue("개발자B");
 			cell = row.createCell(7);	cell.setCellStyle(headStyle);	cell.setCellValue("테스트일자");
 			cell = row.createCell(8);	cell.setCellStyle(bodyStyle);	cell.setCellValue(sdf2.format(new Date()));
 			cell = row.createCell(9);	cell.setCellStyle(headStyle);	cell.setCellValue("");
@@ -803,7 +803,7 @@ public class FepLineInfoSvcImpl implements FepLineInfoSvc {
 					cell = row.createCell(12);	cell.setCellStyle(bodyStyle); 	cell.setCellValue(tempVo.getExtNm() + " IN");
 					cell = row.createCell(13);	cell.setCellStyle(bodyStyle); 	cell.setCellValue(new SimpleDateFormat("yyyy.MM.dd").format(new Date()));
 					cell = row.createCell(14);	cell.setCellStyle(bodyStyle); 	cell.setCellValue("플랫폼기술팀");
-					cell = row.createCell(15);	cell.setCellStyle(bodyStyle); 	cell.setCellValue("김성아");
+					cell = row.createCell(15);	cell.setCellStyle(bodyStyle); 	cell.setCellValue("개발자B");
 					cell = row.createCell(16);	cell.setCellStyle(bodyStyle); 	cell.setCellValue(tempVo.getBizNm() + " 연동용");
 					
 				}

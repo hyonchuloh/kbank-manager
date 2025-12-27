@@ -85,7 +85,7 @@
 </form>
 <h3>APPENDIX. SAMPLE TEXT</h3>
 <ul>
-	<li>URL : http://0.0.0.0/v2.0/cards</li>
+	<li>URL : http://127.0.0.1/v2.0/cards</li>
 	<li>HEADER : Authorization:Bearer test</li>
 	<li>PARAMETERS : bank_tran_id:test|user_seq_no:test|bank_code_std:test|member_bank_code:test</li>
 	<li>BODY : {"dummy":""}</li>

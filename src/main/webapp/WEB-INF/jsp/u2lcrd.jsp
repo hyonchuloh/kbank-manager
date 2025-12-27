@@ -19,7 +19,7 @@ function deployValues(gwname, symbname, linename, luname) {
 <h1>카드계 U2L - FEP실회선 전환(${env}) - </h1>
 <form name="frm" action="u2lcrd" method="POST">
 	<ul>
-		<li>카드계 구노드와 신노드 간의 FEP 실회선 통신정보 변경 프로그램</li>
+		<li>카드계 노드와 신노드 간의 FEP 실회선 통신정보 변경 프로그램</li>
 		<li>변경할 정보 입력 : <input type="text" name="linename" style="width: 250px;" /> <input type="submit" value="SUBMIT" /></li>
 		<li>조작자 IP : ${requestip}</li>
 	</ul>

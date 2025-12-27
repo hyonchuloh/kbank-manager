@@ -57,7 +57,7 @@ function moveValues() {
 </tr><tr>
 	<th>종료일</th><td id="endDate" contenteditable='true'>${item.endDate}</td>
 </tr><tr>
-	<th>개발자(오현철/김성아)</th><td id="developer" contenteditable='true'>${item.developer}</td>
+	<th>개발자(개발자A/개발자B)</th><td id="developer" contenteditable='true'>${item.developer}</td>
 </tr><tr>
 	<th>①형상관리</th><td id="check1" contenteditable='true'>${item.check1}</td>
 </tr><tr>
