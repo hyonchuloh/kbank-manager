@@ -2,8 +2,6 @@ package com.kbk.fep.mngr.ctl;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.ResourceBundle;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -19,10 +17,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.kbk.fep.mngr.dao.vo.FepAlmstLogVo;
 import com.kbk.fep.mngr.dao.vo.FepCommPropVo;
-import com.kbk.fep.mngr.dao.vo.FepOmmInqRowVo;
-import com.kbk.fep.mngr.dao.vo.FepOmmInqVo;
 import com.kbk.fep.mngr.svc.FepAlmstLogSvc;
-import com.kbk.fep.mngr.svc.FepOmmInqSvc;
 import com.kbk.fep.util.FepPropInfo;
 import com.kbk.fep.util.FepSessionUtil;
 
@@ -34,8 +29,6 @@ public class FepAlmstLogCtl {
 	private FepCommPropVo prop;
 	@Autowired
 	private FepSessionUtil session;
-	@Autowired
-	private FepOmmInqSvc ommSvc;
 	
 	@Autowired
 	private FepPropInfo info;

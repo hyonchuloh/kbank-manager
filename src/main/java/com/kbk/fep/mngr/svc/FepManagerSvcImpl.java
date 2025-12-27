@@ -257,10 +257,9 @@ public class FepManagerSvcImpl implements FepManagerSvc {
 	private String encryptPI(String plainText) throws Exception {
 		String encryptedText = null;
 		byte errbyte[] = new byte[5];
-		byte[] inbyte;
 
 		String body = plainText.substring(500);
-		inbyte = body.getBytes();
+		
 //		encryptedText = CubeOneAPI.coencbytes(inbyte, inbyte.length, "AES_PI", 11, null, null, errbyte);
 		encryptedText = body;
 

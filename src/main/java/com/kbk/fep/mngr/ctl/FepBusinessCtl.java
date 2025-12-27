@@ -18,7 +18,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.kbk.fep.mngr.dao.vo.FepCommPropVo;
-import com.kbk.fep.util.FepSessionUtil;
 
 @Controller
 @RequestMapping("/biz")
@@ -26,8 +25,6 @@ public class FepBusinessCtl {
 
 	@Autowired
 	private FepCommPropVo prop;
-	@Autowired
-	private FepSessionUtil session;
 	
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	

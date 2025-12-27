@@ -34,7 +34,7 @@ public class FepSim099012CoreCtl {
 	ResponseEntity<String> relay099012(
 			@RequestHeader(required=false) HttpHeaders headerMap,
 			@RequestBody(required=false) String body) {
-		byte errbyte[] = new byte[5];
+
 		try {
 			String h = URLDecoder.decode(body.substring(0, 500), "EUC-KR");
 			String b = URLDecoder.decode(body.substring(500), "EUC-KR").replaceAll(" ", "+");

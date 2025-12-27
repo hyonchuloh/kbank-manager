@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.kbk.fep.mngr.dao.FepAluserDao;
-import com.kbk.fep.mngr.dao.vo.FepAluserVo;
 import com.kbk.fep.mngr.dao.vo.FepCommPropVo;
 import com.kbk.fep.util.FepSessionUtil;
 
